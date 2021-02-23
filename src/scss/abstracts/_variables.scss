@@ -1,0 +1,25 @@
+
+/* Color pallete */
+$colors: (
+    primary: rgb(127, 251, 24),
+    secondary: rgb(255, 157, 25),
+    tertiary: rgb(255, 246, 154),
+
+);
+/* Color Function */
+@function color ($color-name){
+    @return map-get($colors, $color-name);
+}
+
+/* Font sizes */
+$font-sizes:(
+    xl:3rem,
+    lg:2.5rem,
+    md:2rem,
+    sm:1.8rem,
+    xs:1.4rem
+);
+/* Size function */ 
+@function size($size){
+    @return map-get($font-sizes, $size);
+}
